@@ -4,36 +4,44 @@
     margin: 0px;
   }
 
+:root{
+
+  --branco:#F5FFEB
+
+}
+
   .Cabessas{
 
     font-size: 0.9cm;
     color: blue;
     width: 100%;
     text-align: center;
-    background-color: crimson;
+    background-color: var(--branco);
     position: sticky;
     padding: 20px;
     top: 0px;
     z-index: 1;
     
-    border-bottom: 10px double blue;
+    border-bottom: 3px solid blue;
 
-  }
-  main{
-    min-height: 720px;
   }
 
   #Carros{
     width: 100%;
   }
 
+  .Conteudo {
+
+    position: relative;
+
+  }
+
   .Conteudo article{
-    margin-left: 2%;
-    margin-top: 3%;
-    margin-right: 2%;
-    background-color: coral;
+    bottom: 10%;
+    background-color: rgba(110, 110, 110, 0.295);
     padding: 2%;
-    
+    position: absolute;
+    color: whitesmoke;
 
   }
   .Conteudo article h1{
@@ -46,10 +54,10 @@
   }
  .Conteudo a{
     text-decoration: none;
-    color: blue;
+    color: rgb(183, 183, 238);
  }
  .Conteudo a:hover{
-color: crimson;
+color: rgb(101, 24, 163);
  }
 
   .Conteudo abbr{
@@ -61,12 +69,37 @@ color: crimson;
     color: blue;
     width: 100%;
     text-align: center;
-    background-color: crimson;
+    background-color: var(--branco);
     position: static;
     padding: 8px;
 
     margin-top: 3%;
     
-    border-top: 10px double blue;
+    border-top: 3px solid blue;
   }
-  
+
+  .img-flag {
+
+    width: 25px;
+
+  }
+
+  .img-flag img {
+
+    width: 25px;
+
+  }
+
+  .img-flag:hover{
+
+    scale: 1.4;
+
+  }
+
+  .lang{
+
+    position: sticky;
+    display: flex;
+    bottom: 0px;
+
+  }

@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+
+    <title>Amarok</title>
   </head>
-  <body>
+  <body onload="changeLang('PT-BR')">
     <header class="Cabessas">
       <div>
         <h1>Amarok</h1>
@@ -16,12 +17,12 @@
 
     <main>
       <section class="Conteudo">
-        <img src="./Imagens/Oriloqui.jpg" alt="" id="Carros" />
+        <img src="./img/Oriloqui.jpg" alt="" id="Carros" />
 
         <article>
-            <h1>Carro:</h1>
-            <small>Postado por Xavier Luiz</small>
-            <blockquote cite="https://autoesporte.globo.com/carros/review/2020/10/teste-aceleramos-muito-a-nova-volkswagen-amarok-v6-com-ate-272-cv.ghtml">
+            <h1 id="car">Carro:</h1>
+            <small id="post">Postado por Xavier Luiz 10/5/2022</small>
+            <blockquote cite="https://autoesporte.globo.com/carros/review/2020/10/teste-aceleramos-muito-a-nova-volkswagen-amarok-v6-com-ate-272-cv.ghtml" id="texto">
             O segmento de picapes médias tem uma renovação natural mais lenta,
             mas a <strong><abbr title="Carro da Plebe">Volkswagen</abbr></strong> Amarok abusa dessa característica: a geração atual
             completa 10 anos de mercado. Enquanto não chega a próxima
@@ -32,10 +33,22 @@
         </article>
       </section>
     </main>
+    <div class="lang">
+      <div onclick="changeLang('PT-BR')" class="img-flag">
+
+        <img src="./img/bre.webp">
+
+      </div>
+      <div onclick="changeLang('DE')" class="img-flag">
+
+        <img src="./img/hre.webp">
+
+      </div>
+    </div>
 
     <footer class="Piso">
       <p id="copyRight"></p>
     </footer>
-    <script src="./main.js"></script>
+    <script src="./js/lang.js"></script>
   </body>
 </html>
